@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIARA – Fashion Boutique | Đầm Thiết Kế Cao Cấp Chuẩn Phom</title>
+  <meta name="description" content="TIARA Fashion Boutique – Chuyên các dòng váy, đầm thiết kế cao cấp, sang trọng, tinh tế với mức giá hợp lý. Bảo hành 18 tháng, thử đồ tại nhà, đổi trả 7 ngày.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C5A880'><path d='M12 2L15 8L21 9L16.5 14L18 20L12 17L6 20L7.5 14L3 9L9 8L12 2Z'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tiara: {
+              bg: '#FBF9F5',
+              sand: '#F4EFEA',
+              cream: '#FAF7F2',
+              gold: '#C5A880',
+              goldHover: '#B09268',
+              goldLight: '#EFE7DC',
+              champagne: '#E5D5C0',
+              charcoal: '#1A1A1A',
+              dark: '#141311',
+              darkCard: '#1C1A17',
+              muted: '#6B6864',
+              border: '#E8E2D9'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Montserrat', 'sans-serif']
+          },
+          boxShadow: {
+            'luxury': '0 15px 35px -5px rgba(26, 26, 26, 0.05), 0 5px 15px rgba(0, 0, 0, 0.03)',
+            'luxury-hover': '0 25px 45px -10px rgba(197, 168, 128, 0.22)',
+            'gold-glow': '0 0 25px rgba(197, 168, 128, 0.35)',
+            'inner-glow': 'inset 0 0 20px rgba(197, 168, 128, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4EFEA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A880;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B09268;
+    }
+
+    /* Shimmer Effect for Buttons */
+    @keyframes shimmer {
+      100% { transform: translateX(100%); }
+    }
+    .shimmer-btn {
+      position: relative;
+      overflow: hidden;
+    }
+    .shimmer-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+      transform: translateX(-100%);
+      animation: shimmer 2.5s infinite;
+    }
+
+    /* Soft pulse for badges */
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.03); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-tiara-bg text-tiara-charcoal font-sans antialiased selection:bg-tiara-goldLight selection:text-tiara-charcoal">
+
+  <!-- ========================================================
+       TOP NOTIFICATION BAR (URGENCY & VALUE PROP)
+       ======================================================== -->
+  <div class="bg-tiara-dark text-tiara-champagne text-xs md:text-sm py-2 px-4 text-center tracking-wide border-b border-tiara-gold/20 flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-tiara-gold animate-ping"></span>
+    <span class="font-medium">ƯU ĐÃI ĐỘC QUYỀN:</span> Giảm <strong class="text-tiara-gold font-semibold">30%</strong> cho 50 đơn hàng đầu tiên trong tháng + Tặng Khăn Lụa <strong class="text-tiara-gold">350.000đ</strong>!
+    <a href="#dat-hang" class="underline hover:text-white ml-1 font-semibold transition-colors">Nhận ngay →</a>
+  </div>
+
+  <!-- ========================================================
+       NAVIGATION / HEADER
+       ======================================================== -->
+  <header class="sticky top-0 z-40 bg-tiara-bg/95 backdrop-blur-md border-b border-tiara-border/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-full border border-tiara-gold flex items-center justify-center text-tiara-gold group-hover:bg-tiara-gold group-hover:text-white transition-all duration-300 shadow-sm">
+            <i class="fa-solid fa-crown text-base"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-2xl md:text-3xl font-bold tracking-widest text-tiara-charcoal group-hover:text-tiara-gold transition-colors">TIARA</span>
+            <span class="text-[10px] tracking-[0.28em] text-tiara-muted uppercase font-semibold -mt-1">Fashion Boutique</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-tiara-charcoal/80">
+          <a href="#ve-tiara" class="hover:text-tiara-gold transition-colors">Về TIARA</a>
+          <a href="#gia-tri" class="hover:text-tiara-gold transition-colors">Giá Trị Cốt Lõi</a>
+          <a href="#bestseller" class="hover:text-tiara-gold transition-colors">Bộ Sưu Tập</a>
+          <a href="#trai-nghiem" class="hover:text-tiara-gold transition-colors">Đập Hộp & Chất Vải</a>
+          <a href="#danh-gia" class="hover:text-tiara-gold transition-colors">Khách Hàng</a>
+        </nav>
+
+        <!-- Header CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-4">
+          <button onclick="openSizeGuideModal()" class="text-xs uppercase tracking-wider text-tiara-charcoal hover:text-tiara-gold font-semibold px-3 py-2 border border-tiara-border rounded-full hover:border-tiara-gold transition-all">
+            <i class="fa-solid fa-ruler-horizontal mr-1 text-tiara-gold"></i> Bảng Size
+          </button>
+          <a href="#dat-hang" class="shimmer-btn inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-tiara-charcoal text-white hover:bg-tiara-gold text-xs uppercase tracking-widest font-semibold shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-bag-shopping mr-2 text-tiara-gold"></i> Đặt Hàng Ngay
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden items-center gap-2">
+          <a href="#dat-hang" class="text-xs px-3 py-1.5 bg-tiara-gold text-white font-semibold rounded-full uppercase tracking-wider">
+            Ưu Đãi
+          </a>
+          <button id="mobileMenuBtn" aria-label="Toggle menu" class="p-2 text-tiara-charcoal hover:text-tiara-gold focus:outline-none">
+            <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-tiara-cream border-b border-tiara-border px-6 py-5 transition-all">
+      <div class="flex flex-col space-y-4 text-base font-medium">
+        <a href="#ve-tiara" onclick="toggleMobileMenu()" class="text-tiara-charcoal hover:text-tiara-gold transition-colors py-1">Về TIARA Boutique</a>
+        <a href="#gia-tri" onclick="toggleMobileMenu()" class="text-tiara-charcoal hover:text-tiara-gold transition-colors py-1">Giá Trị Cốt Lõi</a>
+        <a href="#bestseller" onclick="toggleMobileMenu()" class="text-tiara-charcoal hover:text-tiara-gold transition-colors py-1">Bộ Sưu Tập Bestseller</a>
+        <a href="#trai-nghiem" onclick="toggleMobileMenu()" class="text-tiara-charcoal hover:text-tiara-gold transition-colors py-1">Trải Nghiệm Unboxing</a>
+        <a href="#danh-gia" onclick="toggleMobileMenu()" class="text-tiara-charcoal hover:text-tiara-gold transition-colors py-1">Đánh Giá Khách Hàng</a>
+        <div class="pt-3 border-t border-tiara-border flex flex-col gap-3">
+          <button onclick="openSizeGuideModal(); toggleMobileMenu();" class="text-left text-sm text-tiara-charcoal py-1">
+            <i class="fa-solid fa-ruler-horizontal mr-2 text-tiara-gold"></i> Bảng Tra Cứu Size Chuẩn
+          </button>
+          <a href="#dat-hang" onclick="toggleMobileMenu()" class="w-full py-3 text-center rounded-full bg-tiara-charcoal text-white font-semibold text-sm uppercase tracking-wider">
+            Nhận Ưu Đãi 30% Ngay
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================================
+       SECTION 1: HERO SECTION (ATTENTION - 3 SECONDS HOOK)
+       ======================================================== -->
+  <section id="ve-tiara" class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24">
+    <!-- Subtle Background Decors -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-tiara-goldLight/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-32 w-80 h-80 bg-tiara-champagne/30 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col justify-center space-y-6 lg:pr-6 text-left">
+          
+          <!-- Tagline -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tiara-sand border border-tiara-gold/40 text-tiara-goldDark text-xs md:text-sm font-semibold tracking-wider uppercase w-fit">
+            <i class="fa-solid fa-gem text-tiara-gold text-xs"></i>
+            <span>TIARA FASHION BOUTIQUE – TINH TẾ TRONG TỪNG NÉT VẼ</span>
+          </div>
+
+          <!-- Headline (Context & Result) -->
+          <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-tiara-charcoal leading-[1.2] font-bold">
+            Khai Phá Thần Thái Sang Trọng – <br class="hidden sm:inline">
+            <span class="text-tiara-gold italic font-normal">Không Cần Chi Phí</span> Đắt Đỏ
+          </h1>
+
+          <!-- Sub-headline (Context & Empathy) -->
+          <p class="text-base sm:text-lg text-tiara-muted leading-relaxed font-normal max-w-2xl">
+            Bạn xứng đáng khoác lên mình những chiếc váy đầm cao cấp chuẩn phom boutique mà không phải chi trả mức giá của các thương hiệu xa xỉ. Mỗi nếp gấp, đường cắt đều được tính toán để tôn vinh trọn vẹn nét đẹp tự nhiên của bạn.
+          </p>
+
+          <!-- Primary CTA & Action Area -->
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#bestseller" class="shimmer-btn inline-flex items-center justify-center px-8 py-4 rounded-full bg-tiara-charcoal hover:bg-tiara-gold text-white font-semibold text-sm uppercase tracking-widest shadow-luxury hover:shadow-luxury-hover transition-all duration-300 transform hover:-translate-y-1">
+              <span>Khám Phá Bộ Sưu Tập Mới</span>
+              <i class="fa-solid fa-arrow-right-long ml-3 transition-transform group-hover:translate-x-1"></i>
+            </a>
+            <a href="#dat-hang" class="inline-flex items-center justify-center px-6 py-4 rounded-full border border-tiara-gold text-tiara-charcoal hover:bg-tiara-gold/10 font-semibold text-sm tracking-wide transition-all">
+              <i class="fa-solid fa-percent text-tiara-gold mr-2"></i>
+              <span>Nhận Voucher Giảm 30%</span>
+            </a>
+          </div>
+
+          <!-- Micro-Trust Badges (3 Badges) -->
+          <div class="pt-6 border-t border-tiara-border/80 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-white/70 border border-tiara-border/60 shadow-sm">
+              <div class="w-9 h-9 rounded-full bg-tiara-sand flex items-center justify-center text-tiara-gold text-base shrink-0">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-tiara-charcoal uppercase tracking-wider">Bảo hành 18 tháng</p>
+                <p class="text-[11px] text-tiara-muted">Trọn đời khóa & đường may</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-white/70 border border-tiara-border/60 shadow-sm">
+              <div class="w-9 h-9 rounded-full bg-tiara-sand flex items-center justify-center text-tiara-gold text-base shrink-0">
+                <i class="fa-solid fa-box-open"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-tiara-charcoal uppercase tracking-wider">Đồng kiểm & Thử tại nhà</p>
+                <p class="text-[11px] text-tiara-muted">Vừa vặn ưng ý mới thanh toán</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-white/70 border border-tiara-border/60 shadow-sm">
+              <div class="w-9 h-9 rounded-full bg-tiara-sand flex items-center justify-center text-tiara-gold text-base shrink-0">
+                <i class="fa-solid fa-rotate-left"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-tiara-charcoal uppercase tracking-wider">Đổi trả 7 ngày</p>
+                <p class="text-[11px] text-tiara-muted">Hỗ trợ đổi size tận cửa</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Column (5 cols) -->
+        <div class="lg:col-span-5 relative">
+          <!-- Outer Decorative Frame -->
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Glow background -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-tiara-gold/30 to-tiara-champagne/40 rounded-[2.5rem] transform rotate-3 scale-95 filter blur-lg"></div>
+
+            <!-- Main Image Card -->
+            <div class="relative rounded-[2rem] overflow-hidden border-4 border-white shadow-2xl bg-tiara-sand aspect-[3/4]">
+              <img 
+                src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1000&q=80" 
+                alt="TIARA Fashion Boutique Luxury Dress" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700 ease-out"
+                loading="eager"
+              >
+
+              <!-- Image Gradient Overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-tiara-charcoal/70 via-transparent to-black/10"></div>
+
+              <!-- Top Left Tag -->
+              <div class="absolute top-5 left-5">
+                <span class="px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-tiara-charcoal text-[11px] font-bold uppercase tracking-wider shadow-md inline-flex items-center gap-1.5">
+                  <i class="fa-solid fa-crown text-tiara-gold"></i> Thiết Kế Độc Quyền
+                </span>
+              </div>
+
+              <!-- Bottom Content on Image -->
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <p class="text-xs uppercase tracking-widest text-tiara-champagne font-semibold">New Collection 2024</p>
+                <h3 class="font-serif text-2xl font-bold mt-1">Graceful Elegance</h3>
+                <div class="flex items-center justify-between mt-2 pt-2 border-t border-white/20 text-xs">
+                  <span>Chất liệu lụa tơ tằm dệt cao cấp</span>
+                  <span class="text-tiara-champagne font-semibold">Chuẩn Phom 3D</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Social Proof Badge (Bottom-Right) -->
+            <div class="absolute -bottom-6 -left-4 sm:-left-8 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-tiara-border shadow-luxury max-w-[240px] animate-pulse-subtle">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-tiara-goldLight flex items-center justify-center text-tiara-gold text-lg shrink-0">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <div class="flex text-amber-400 text-xs gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-xs font-bold text-tiara-charcoal mt-0.5">4.9 / 5.0 Rating</p>
+                  <p class="text-[10px] text-tiara-muted">Từ 15,000+ quý cô sành điệu</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Small Accent Tag (Top-Right) -->
+            <div class="absolute -top-4 -right-4 sm:-right-6 bg-tiara-dark text-tiara-gold px-4 py-2.5 rounded-2xl border border-tiara-gold/40 shadow-xl text-center">
+              <span class="block text-[10px] uppercase tracking-wider text-white">Chính Hãng</span>
+              <span class="font-serif text-sm font-bold">TIARA BOUTIQUE</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       SECTION 2: SOCIAL PROOF (BUILDING IMMEDIATE TRUST)
+       ======================================================== -->
+  <section id="danh-gia" class="py-16 bg-tiara-sand/60 border-y border-tiara-border/70 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Statistics Bar (4 Key Metrics) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 pb-14 border-b border-tiara-border/80">
+        
+        <div class="text-center p-4 rounded-2xl bg-white/60 border border-tiara-border/50 shadow-sm">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tiara-charcoal">
+            15,000<span class="text-tiara-gold">+</span>
+          </p>
+          <p class="text-xs sm:text-sm text-tiara-muted mt-2 font-medium">Phụ nữ tin dùng trên toàn quốc</p>
+        </div>
+
+        <div class="text-center p-4 rounded-2xl bg-white/60 border border-tiara-border/50 shadow-sm">
+          <div class="flex justify-center items-center gap-1 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tiara-charcoal">
+            <span>98</span><span class="text-tiara-gold text-2xl">%</span>
+          </div>
+          <p class="text-xs sm:text-sm text-tiara-muted mt-2 font-medium">Đánh giá 5 sao về chất vải & phom</p>
+        </div>
+
+        <div class="text-center p-4 rounded-2xl bg-white/60 border border-tiara-border/50 shadow-sm">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tiara-charcoal">
+            18 <span class="text-tiara-gold text-2xl sm:text-3xl">Tháng</span>
+          </p>
+          <p class="text-xs sm:text-sm text-tiara-muted mt-2 font-medium">Cam kết bảo hành phom & khóa</p>
+        </div>
+
+        <div class="text-center p-4 rounded-2xl bg-white/60 border border-tiara-border/50 shadow-sm">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tiara-charcoal">
+            100<span class="text-tiara-gold">%</span>
+          </p>
+          <p class="text-xs sm:text-sm text-tiara-muted mt-2 font-medium">Đồng kiểm & thử đồ trước thanh toán</p>
+        </div>
+
+      </div>
+
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto pt-14 pb-10">
+        <span class="text-xs uppercase tracking-[0.25em] text-tiara-gold font-bold">Khách Hàng Nói Về TIARA</span>
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-tiara-charcoal mt-2">
+          Niềm Tin Được Khẳng Định Bằng Chất Lượng
+        </h2>
+        <p class="text-sm sm:text-base text-tiara-muted mt-2">
+          Lắng nghe cảm nhận chân thật từ những phụ nữ đã chọn TIARA để tỏa sáng trong các sự kiện quan trọng.
+        </p>
+      </div>
+
+      <!-- Customer Reviews Grid (3 Featured Reviews) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1: Minh Anh (Hero Quote) -->
+        <div class="bg-white rounded-3xl p-8 border border-tiara-border shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between relative group">
+          <div class="absolute -top-3 right-8 px-3 py-1 bg-tiara-gold text-white text-[10px] font-bold uppercase tracking-wider rounded-full shadow-sm">
+            Top Review
+          </div>
+          <div>
+            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-tiara-charcoal text-sm sm:text-base leading-relaxed italic">
+              "Mặc chiếc đầm TIARA đi tiệc công ty, mình nhận vô số lời khen. Vải dày dặn, tôn dáng giấu khuyết điểm vòng 2 cực tốt! Cảm giác như mặc đầm may đo tiền triệu chứ không phải đồ may sẵn."
+            </p>
+          </div>
+
+          <div class="mt-6 pt-5 border-t border-tiara-border/60 flex items-center gap-4">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+              alt="Minh Anh" 
+              class="w-12 h-12 rounded-full object-cover border-2 border-tiara-gold"
+            >
+            <div>
+              <h4 class="font-bold text-sm text-tiara-charcoal">Minh Anh</h4>
+              <p class="text-xs text-tiara-muted">Nữ doanh nhân • Hà Nội</p>
+              <span class="inline-flex items-center text-[11px] text-emerald-600 font-medium gap-1 mt-0.5">
+                <i class="fa-solid fa-circle-check"></i> Đã mua Đầm Graceful Silk
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Hoàng Lan -->
+        <div class="bg-white rounded-3xl p-8 border border-tiara-border shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between relative group">
+          <div>
+            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-tiara-charcoal text-sm sm:text-base leading-relaxed italic">
+              "Đường may tỉ mỉ đến từng mũi chỉ, không một sợi thừa. Phom cúp ngực và eo may chuẩn từng centimet, tôn dáng thanh thoát mà vẫn dễ chịu khi ngồi họp suốt cả ngày. TIARA đúng là sự lựa chọn xứng đáng!"
+            </p>
+          </div>
+
+          <div class="mt-6 pt-5 border-t border-tiara-border/60 flex items-center gap-4">
+            <img 
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" 
+              alt="Hoàng Lan" 
+              class="w-12 h-12 rounded-full object-cover border-2 border-tiara-gold"
+            >
+            <div>
+              <h4 class="font-bold text-sm text-tiara-charcoal">Hoàng Lan</h4>
+              <p class="text-xs text-tiara-muted">Bác sĩ Thẩm mỹ • TP. Hồ Chí Minh</p>
+              <span class="inline-flex items-center text-[11px] text-emerald-600 font-medium gap-1 mt-0.5">
+                <i class="fa-solid fa-circle-check"></i> Đã mua Elegant Queen
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Thu Thảo -->
+        <div class="bg-white rounded-3xl p-8 border border-tiara-border shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between relative group">
+          <div>
+            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-tiara-charcoal text-sm sm:text-base leading-relaxed italic">
+              "Chính sách đồng kiểm & thử đồ tại nhà làm mình hoàn toàn an tâm. Shipper rất kiên nhẫn đợi mình thử, vừa vặn không chê vào đâu được mới thu tiền. Hộp quà đóng gói sang như đồ hiệu Milan!"
+            </p>
+          </div>
+
+          <div class="mt-6 pt-5 border-t border-tiara-border/60 flex items-center gap-4">
+            <img 
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=150&q=80" 
+              alt="Thu Thảo" 
+              class="w-12 h-12 rounded-full object-cover border-2 border-tiara-gold"
+            >
+            <div>
+              <h4 class="font-bold text-sm text-tiara-charcoal">Thu Thảo</h4>
+              <p class="text-xs text-tiara-muted">MC Song Ngữ • Đà Nẵng</p>
+              <span class="inline-flex items-center text-[11px] text-emerald-600 font-medium gap-1 mt-0.5">
+                <i class="fa-solid fa-circle-check"></i> Đã mua Silk Glow
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Exclusive Warranty Guarantee Card (Highlight Feature) -->
+      <div class="mt-12 bg-gradient-to-r from-tiara-dark via-tiara-darkCard to-tiara-dark rounded-3xl p-6 sm:p-10 border border-tiara-gold/40 shadow-2xl text-white relative overflow-hidden">
+        <!-- Decorative golden glow -->
+        <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-tiara-gold/20 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          
+          <div class="lg:col-span-8 flex items-start sm:items-center gap-5">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-tiara-gold/20 border border-tiara-gold flex items-center justify-center text-tiara-gold text-2xl sm:text-3xl shrink-0 shadow-gold-glow">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tiara-gold/20 text-tiara-gold text-xs uppercase tracking-wider font-semibold mb-2">
+                <i class="fa-solid fa-medal text-xs"></i> Đặc Quyền Độc Quyền TIARA
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl lg:text-3xl font-bold text-tiara-champagne">
+                Cam Kết Bảo Hành Phom Đầm, Đường May & Khóa Kéo Trọn 18 Tháng
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-300 mt-2 leading-relaxed">
+                Chúng tôi không chỉ bán một chiếc đầm, chúng tôi đồng hành cùng sự tự tin của bạn. Nếu đầm có bất kỳ dấu hiệu giãn phom, bung chỉ hay hỏng khóa trong suốt 18 tháng, TIARA chịu hoàn toàn chi phí bảo hành & giao nhận hai chiều.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col justify-center items-stretch gap-3">
+            <a href="#dat-hang" class="shimmer-btn py-3.5 px-6 rounded-full bg-tiara-gold hover:bg-tiara-goldHover text-tiara-charcoal font-bold text-center text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all">
+              Kích Hoạt Đặc Quyền Này
+            </a>
+            <span class="text-center text-[11px] text-gray-400">
+              <i class="fa-solid fa-check text-tiara-gold mr-1"></i> Áp dụng cho 100% mẫu đầm TIARA
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       SECTION 3: FEATURES & BENEFITS (INTEREST & DESIRE)
+       ======================================================== -->
+  <section id="gia-tri" class="py-20 lg:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-tiara-gold font-bold">Kỹ Nghệ May Đo & Giá Trị Vượt Trội</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tiara-charcoal mt-2">
+          Vì Sao Phụ Nữ Chọn TIARA?
+        </h2>
+        <p class="text-base text-tiara-muted mt-3">
+          Sự hòa quyện giữa kỹ nghệ thủ công boutique tỉ mỉ, chất liệu vải tuyển chọn khắt khe và tư duy thiết kế tối ưu phom dáng phụ nữ Á Đông.
+        </p>
+      </div>
+
+      <!-- 1. Grid 3 Cột: Giá Trị Cốt Lõi (CARE: Action & Empathy) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+        
+        <!-- Core Value 1: Chất liệu thượng hạng -->
+        <div class="bg-white rounded-3xl p-8 border border-tiara-border shadow-luxury hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+          <div class="w-14 h-14 rounded-2xl bg-tiara-sand text-tiara-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-tiara-gold group-hover:text-white transition-all shadow-sm">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+          <span class="text-[11px] uppercase tracking-widest text-tiara-gold font-bold mb-1">Chất Liệu Tuyển Chọn</span>
+          <h3 class="font-serif text-xl sm:text-2xl font-bold text-tiara-charcoal mb-3">
+            Lụa Silk Tơ Tằm & Chiffon Cao Cấp
+          </h3>
+          <p class="text-sm text-tiara-muted leading-relaxed">
+            Chất vải mềm mại, óng ả tự nhiên, có độ rủ hoàn hảo và khả năng điều hòa thân nhiệt. Êm dịu tuyệt đối với làn da nhạy cảm, không gây bí bách ngay cả trong ngày hè oi ả.
+          </p>
+          <div class="mt-6 pt-4 border-t border-tiara-border/60 flex items-center gap-2 text-xs font-semibold text-tiara-goldDark">
+            <i class="fa-solid fa-sparkles text-tiara-gold"></i> Không nhăn nhàu • Mềm mại tự nhiên
+          </div>
+        </div>
+
+        <!-- Core Value 2: Kỹ thuật cắt cúp 3D -->
+        <div class="bg-white rounded-3xl p-8 border border-tiara-border shadow-luxury hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+          <div class="w-14 h-14 rounded-2xl bg-tiara-sand text-tiara-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-tiara-gold group-hover:text-white transition-all shadow-sm">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <span class="text-[11px] uppercase tracking-widest text-tiara-gold font-bold mb-1">Kỹ Nghệ Cắt Cúp</span>
+          <h3 class="font-serif text-xl sm:text-2xl font-bold text-tiara-charcoal mb-3">
+            Kỹ Thuật Cắt Cúp 3D Giấu Khuyết Điểm
+          </h3>
+          <p class="text-sm text-tiara-muted leading-relaxed">
+            Nghiên cứu trên hơn 10.000 số đo phụ nữ Việt Nam, đường may nhấn eo cao và kỹ thuật xếp nếp giúp che khuyết điểm vòng 2 khéo léo, đồng thời tôn trọn đường cong quyến rũ.
+          </p>
+          <div class="mt-6 pt-4 border-t border-tiara-border/60 flex items-center gap-2 text-xs font-semibold text-tiara-goldDark">
+            <i class="fa-solid fa-check-double text-tiara-gold"></i> Tôn dáng tự nhiên • Thon gọn thanh thoát
+          </div>
+        </div>
+
+        <!-- Core Value 3: Mức giá hợp lý -->
+        <div class="bg-white rounded-3xl p-8 border border-tiara-border shadow-luxury hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+          <div class="w-14 h-14 rounded-2xl bg-tiara-sand text-tiara-gold flex items-center justify-center text-2xl mb-6 group-hover:bg-tiara-gold group-hover:text-white transition-all shadow-sm">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <span class="text-[11px] uppercase tracking-widest text-tiara-gold font-bold mb-1">Tối Ưu Chi Phí</span>
+          <h3 class="font-serif text-xl sm:text-2xl font-bold text-tiara-charcoal mb-3">
+            Mức Giá Hợp Lý Từ Xưởng May Boutique
+          </h3>
+          <p class="text-sm text-tiara-muted leading-relaxed">
+            Chúng tôi cắt giảm toàn bộ chi phí trung gian, mặt bằng đắt đỏ và chi phí thương hiệu ảo để đưa những thiết kế sang trọng đến tận tay bạn với mức giá trung thực nhất.
+          </p>
+          <div class="mt-6 pt-4 border-t border-tiara-border/60 flex items-center gap-2 text-xs font-semibold text-tiara-goldDark">
+            <i class="fa-solid fa-tag text-tiara-gold"></i> Tiết kiệm 40% so với showroom xa xỉ
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2. Khối Interactive Media: UNBOXING & DETAILED REVIEW -->
+      <div id="trai-nghiem" class="bg-tiara-cream rounded-3xl border border-tiara-border p-6 sm:p-10 lg:p-12 shadow-luxury mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- Media Showcase (Left 6 cols) -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl overflow-hidden border border-tiara-border shadow-lg aspect-video bg-tiara-charcoal group cursor-pointer" onclick="openVideoModal()">
+              
+              <img 
+                id="unboxingPreviewImg" 
+                src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80" 
+                alt="TIARA Luxury Unboxing Box" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              >
+
+              <!-- Dark overlay -->
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                <!-- Play button with ripple -->
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 backdrop-blur-md text-tiara-charcoal flex items-center justify-center text-xl sm:text-2xl pl-1 shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                  <i class="fa-solid fa-play text-tiara-gold"></i>
+                </div>
+              </div>
+
+              <!-- Media Badges -->
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-[11px] font-semibold tracking-wider uppercase inline-flex items-center gap-1.5">
+                  <i class="fa-solid fa-film text-tiara-gold"></i> Trải Nghiệm Mở Hộp
+                </span>
+              </div>
+
+              <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-tiara-charcoal">
+                <i class="fa-solid fa-magnifying-glass-plus text-tiara-gold mr-1"></i> Soi Cận Cảnh 4K
+              </div>
+            </div>
+
+            <!-- Tab Buttons to inspect different facets -->
+            <div class="grid grid-cols-3 gap-2 mt-4">
+              <button onclick="changeUnboxingTab('box')" id="tabBtn-box" class="unboxing-tab-btn px-3 py-2 rounded-xl text-xs font-bold border transition-all text-center bg-tiara-gold text-white border-tiara-gold shadow-sm">
+                📦 Hộp Quà Boutique
+              </button>
+              <button onclick="changeUnboxingTab('seam')" id="tabBtn-seam" class="unboxing-tab-btn px-3 py-2 rounded-xl text-xs font-bold border transition-all text-center bg-white text-tiara-charcoal border-tiara-border hover:border-tiara-gold">
+                🪡 Chi Tiết Đường Chỉ
+              </button>
+              <button onclick="changeUnboxingTab('fabric')" id="tabBtn-fabric" class="unboxing-tab-btn px-3 py-2 rounded-xl text-xs font-bold border transition-all text-center bg-white text-tiara-charcoal border-tiara-border hover:border-tiara-gold">
+                ✨ Lụa Silk Cận Cảnh
+              </button>
+            </div>
+          </div>
+
+          <!-- Content Description (Right 6 cols) -->
+          <div class="lg:col-span-6 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tiara-sand text-tiara-gold text-xs uppercase tracking-wider font-bold">
+              <i class="fa-solid fa-eye"></i> Minh Bạch & Tận Tâm
+            </div>
+
+            <h3 id="unboxingTitle" class="font-serif text-2xl sm:text-3xl font-bold text-tiara-charcoal leading-tight">
+              Đập Hộp TIARA – Trọn Vẹn Cảm Xúc Nhận Món Quà Cho Chính Bạn
+            </h3>
+
+            <p id="unboxingDesc" class="text-sm sm:text-base text-tiara-muted leading-relaxed">
+              Mỗi sản phẩm TIARA đều được đóng gói tỉ mỉ trong hộp quà cứng cáp phủ nơ lụa satin champagne sang trọng, kèm thiệp cảm ơn dập kim và túi thơm tự nhiên cao cấp. Khi mở ra, bạn sẽ cảm nhận ngay hương thơm dịu nhẹ và sự trân quý chúng tôi gửi gắm.
+            </p>
+
+            <!-- Inspection checklist -->
+            <ul id="unboxingList" class="space-y-3 pt-2">
+              <li class="flex items-start gap-3 text-sm text-tiara-charcoal">
+                <div class="w-5 h-5 rounded-full bg-tiara-goldLight text-tiara-gold flex items-center justify-center text-xs shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span><strong>Hộp đựng cứng cao cấp:</strong> Bảo vệ đầm nguyên phom dáng trong quá trình vận chuyển.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-tiara-charcoal">
+                <div class="w-5 h-5 rounded-full bg-tiara-goldLight text-tiara-gold flex items-center justify-center text-xs shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span><strong>Đường may giấu mép tinh xảo:</strong> Không một sợi chỉ thừa, đường may phẳng phiu ôm sát cơ thể.</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-tiara-charcoal">
+                <div class="w-5 h-5 rounded-full bg-tiara-goldLight text-tiara-gold flex items-center justify-center text-xs shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span><strong>Khóa kéo giọt nước YKK ẩn:</strong> Trơn mượt tuyệt đối, độ bền trên 10.000 lần kéo.</span>
+              </li>
+            </ul>
+
+            <div class="pt-3">
+              <button onclick="openVideoModal()" class="inline-flex items-center gap-2 text-sm font-bold text-tiara-gold hover:text-tiara-goldHover transition-colors underline decoration-2 underline-offset-4">
+                <span>Xem video unboxing trực tiếp</span>
+                <i class="fa-solid fa-arrow-right-long text-xs"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- 3. Showcase 3 Sản Phẩm Bestseller -->
+      <div id="bestseller" class="pt-4">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-tiara-gold font-bold">Bộ Sưu Tập Nổi Bật</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-tiara-charcoal mt-1">
+              3 Thiết Kế Bestseller Được Yêu Thích Nhất
+            </h2>
+          </div>
+          <p class="text-sm text-tiara-muted max-w-md mt-3 md:mt-0">
+            Số lượng mỗi đợt may có hạn để đảm bảo chất lượng may đo thủ công. Nhanh tay chọn ngay mẫu đầm ưng ý nhất!
+          </p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Product 1: Đầm Dạ Hội Graceful Silk -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-tiara-border shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col group">
+            
+            <!-- Image Frame -->
+            <div class="relative overflow-hidden aspect-[3/4] bg-tiara-sand">
+              <img 
+                src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80" 
+                alt="Đầm Dạ Hội Graceful Silk" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              >
+              <!-- Badge -->
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-tiara-charcoal text-tiara-gold text-[10px] font-bold uppercase tracking-wider rounded-full shadow-md">
+                  ★ Bán Chạy #1
+                </span>
+              </div>
+              <div class="absolute top-4 right-4">
+                <span class="px-2.5 py-1 bg-red-600 text-white text-[11px] font-bold rounded-full shadow-md">
+                  -31%
+                </span>
+              </div>
+
+              <!-- Quick View Floating Button on Hover -->
+              <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <button onclick="selectDressAndOrder('Đầm Dạ Hội Graceful Silk', '1.450.000đ')" class="w-full py-3 rounded-full bg-white/95 text-tiara-charcoal font-bold text-xs uppercase tracking-wider shadow-lg hover:bg-tiara-gold hover:text-white transition-all">
+                  Chọn Mẫu Này
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6 flex flex-col flex-grow justify-between">
+              <div>
+                <!-- Stars & Sold Count -->
+                <div class="flex items-center justify-between text-xs mb-2">
+                  <div class="flex text-amber-400 gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-tiara-muted font-medium ml-1">(428)</span>
+                  </div>
+                  <span class="text-tiara-muted">Đã bán 1.8k</span>
+                </div>
+
+                <h3 class="font-serif text-xl font-bold text-tiara-charcoal group-hover:text-tiara-gold transition-colors">
+                  Đầm Dạ Hội Graceful Silk
+                </h3>
+
+                <p class="text-xs text-tiara-muted mt-2 line-clamp-2">
+                  Thiết kế cúp ngực sang trọng, tà váy rủ mềm mại tạo hiệu ứng kéo dài đôi chân. Hoàn hảo cho dạ tiệc, sinh nhật và sự kiện trang trọng.
+                </p>
+
+                <!-- Color Options & Sizes -->
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-tiara-border/60 text-xs">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-tiara-muted text-[11px]">Màu:</span>
+                    <span class="w-4 h-4 rounded-full bg-[#E5D5C0] border border-gray-300 inline-block" title="Champagne"></span>
+                    <span class="w-4 h-4 rounded-full bg-[#1A1A1A] border border-gray-300 inline-block" title="Đen Quý Phái"></span>
+                    <span class="w-4 h-4 rounded-full bg-[#8E2800] border border-gray-300 inline-block" title="Đỏ Rượu"></span>
+                  </div>
+                  <div class="text-tiara-muted font-medium">
+                    Size: S • M • L • XL
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA Button -->
+              <div class="mt-6 pt-4 border-t border-tiara-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-gray-400 line-through">2.100.000đ</span>
+                  <p class="font-serif text-xl font-bold text-tiara-charcoal">
+                    1.450.000<span class="text-xs font-sans">đ</span>
+                  </p>
+                </div>
+                <button onclick="selectDressAndOrder('Đầm Dạ Hội Graceful Silk', '1.450.000đ')" class="px-5 py-2.5 rounded-full bg-tiara-charcoal hover:bg-tiara-gold text-white font-semibold text-xs uppercase tracking-wider transition-all shadow-sm">
+                  Đặt Mua
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Product 2: Đầm Công Sở Elegant Queen -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-tiara-border shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col group">
+            
+            <!-- Image Frame -->
+            <div class="relative overflow-hidden aspect-[3/4] bg-tiara-sand">
+              <img 
+                src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80" 
+                alt="Đầm Công Sở Elegant Queen" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              >
+              <!-- Badge -->
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-tiara-gold text-white text-[10px] font-bold uppercase tracking-wider rounded-full shadow-md">
+                  ★ Yêu Thích
+                </span>
+              </div>
+              <div class="absolute top-4 right-4">
+                <span class="px-2.5 py-1 bg-red-600 text-white text-[11px] font-bold rounded-full shadow-md">
+                  -31%
+                </span>
+              </div>
+
+              <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <button onclick="selectDressAndOrder('Đầm Công Sở Elegant Queen', '1.280.000đ')" class="w-full py-3 rounded-full bg-white/95 text-tiara-charcoal font-bold text-xs uppercase tracking-wider shadow-lg hover:bg-tiara-gold hover:text-white transition-all">
+                  Chọn Mẫu Này
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6 flex flex-col flex-grow justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs mb-2">
+                  <div class="flex text-amber-400 gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-tiara-muted font-medium ml-1">(312)</span>
+                  </div>
+                  <span class="text-tiara-muted">Đã bán 1.4k</span>
+                </div>
+
+                <h3 class="font-serif text-xl font-bold text-tiara-charcoal group-hover:text-tiara-gold transition-colors">
+                  Đầm Công Sở Elegant Queen
+                </h3>
+
+                <p class="text-xs text-tiara-muted mt-2 line-clamp-2">
+                  Cổ V thanh lịch kết hợp đai eo bản nhỡ giấu eo tinh tế. Vải tuyết lụa cao cấp chống nhăn tuyệt đối, thoáng mát cho cả ngày dài văn phòng.
+                </p>
+
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-tiara-border/60 text-xs">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-tiara-muted text-[11px]">Màu:</span>
+                    <span class="w-4 h-4 rounded-full bg-[#FAF7F2] border border-gray-300 inline-block" title="Kem Sữa"></span>
+                    <span class="w-4 h-4 rounded-full bg-[#3B444B] border border-gray-300 inline-block" title="Xám Chì"></span>
+                    <span class="w-4 h-4 rounded-full bg-[#1C39BB] border border-gray-300 inline-block" title="Xanh Navy"></span>
+                  </div>
+                  <div class="text-tiara-muted font-medium">
+                    Size: S • M • L • XL
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA Button -->
+              <div class="mt-6 pt-4 border-t border-tiara-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-gray-400 line-through">1.850.000đ</span>
+                  <p class="font-serif text-xl font-bold text-tiara-charcoal">
+                    1.280.000<span class="text-xs font-sans">đ</span>
+                  </p>
+                </div>
+                <button onclick="selectDressAndOrder('Đầm Công Sở Elegant Queen', '1.280.000đ')" class="px-5 py-2.5 rounded-full bg-tiara-charcoal hover:bg-tiara-gold text-white font-semibold text-xs uppercase tracking-wider transition-all shadow-sm">
+                  Đặt Mua
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Product 3: Đầm Dạo Phố Silk Glow -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-tiara-border shadow-luxury hover:shadow-luxury-hover transition-all duration-300 flex flex-col group">
+            
+            <!-- Image Frame -->
+            <div class="relative overflow-hidden aspect-[3/4] bg-tiara-sand">
+              <img 
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" 
+                alt="Đầm Dạo Phố Silk Glow" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              >
+              <!-- Badge -->
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-tiara-charcoal text-tiara-gold text-[10px] font-bold uppercase tracking-wider rounded-full shadow-md">
+                  ★ Mới Ra Mắt
+                </span>
+              </div>
+              <div class="absolute top-4 right-4">
+                <span class="px-2.5 py-1 bg-red-600 text-white text-[11px] font-bold rounded-full shadow-md">
+                  -28%
+                </span>
+              </div>
+
+              <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <button onclick="selectDressAndOrder('Đầm Dạo Phố Silk Glow', '1.150.000đ')" class="w-full py-3 rounded-full bg-white/95 text-tiara-charcoal font-bold text-xs uppercase tracking-wider shadow-lg hover:bg-tiara-gold hover:text-white transition-all">
+                  Chọn Mẫu Này
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6 flex flex-col flex-grow justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs mb-2">
+                  <div class="flex text-amber-400 gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-tiara-muted font-medium ml-1">(245)</span>
+                  </div>
+                  <span class="text-tiara-muted">Đã bán 960</span>
+                </div>
+
+                <h3 class="font-serif text-xl font-bold text-tiara-charcoal group-hover:text-tiara-gold transition-colors">
+                  Đầm Dạo Phố Silk Glow
+                </h3>
+
+                <p class="text-xs text-tiara-muted mt-2 line-clamp-2">
+                  Chất lụa bay bổng, họa tiết tối giản thanh tao. Phom suông nhẹ có dây thắt linh hoạt tạo điểm nhấn dịu dàng cho những buổi trà chiều, du lịch cuối tuần.
+                </p>
+
+                <div class="flex items-center justify-between mt-4 pt-3 border-t border-tiara-border/60 text-xs">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-tiara-muted text-[11px]">Màu:</span>
+                    <span class="w-4 h-4 rounded-full bg-[#E8D8C3] border border-gray-300 inline-block" title="Beige Nhạt"></span>
+                    <span class="w-4 h-4 rounded-full bg-[#F4C2C2] border border-gray-300 inline-block" title="Hồng Pastel"></span>
+                    <span class="w-4 h-4 rounded-full bg-[#9AB87A] border border-gray-300 inline-block" title="Xanh Bơ"></span>
+                  </div>
+                  <div class="text-tiara-muted font-medium">
+                    Size: S • M • L • XL
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA Button -->
+              <div class="mt-6 pt-4 border-t border-tiara-border/60 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-gray-400 line-through">1.600.000đ</span>
+                  <p class="font-serif text-xl font-bold text-tiara-charcoal">
+                    1.150.000<span class="text-xs font-sans">đ</span>
+                  </p>
+                </div>
+                <button onclick="selectDressAndOrder('Đầm Dạo Phố Silk Glow', '1.150.000đ')" class="px-5 py-2.5 rounded-full bg-tiara-charcoal hover:bg-tiara-gold text-white font-semibold text-xs uppercase tracking-wider transition-all shadow-sm">
+                  Đặt Mua
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Help Choosing Size Banner -->
+        <div class="mt-12 text-center p-6 bg-white rounded-2xl border border-tiara-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3 text-left">
+            <div class="w-10 h-10 rounded-full bg-tiara-sand text-tiara-gold flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-tape"></i>
+            </div>
+            <div>
+              <p class="text-sm font-bold text-tiara-charcoal">Bạn băn khoăn về kích thước và số đo vừa vặn?</p>
+              <p class="text-xs text-tiara-muted">Xem bảng quy đổi chuẩn hoặc để lại thông tin để stylist TIARA gọi tư vấn riêng.</p>
+            </div>
+          </div>
+          <button onclick="openSizeGuideModal()" class="px-5 py-2.5 rounded-full border border-tiara-gold text-tiara-charcoal hover:bg-tiara-gold hover:text-white font-semibold text-xs uppercase tracking-wider transition-all shrink-0">
+            Xem Bảng Tra Size
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       SECTION 4: OFFER & PRICE (ACTION & LEAD CAPTURE)
+       ======================================================== -->
+  <section id="dat-hang" class="py-20 bg-tiara-dark text-white relative overflow-hidden">
+    <!-- Glowing background accents -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-tiara-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-tiara-champagne/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tiara-gold/20 border border-tiara-gold/40 text-tiara-gold text-xs font-bold uppercase tracking-widest mb-3">
+          <i class="fa-solid fa-clock text-xs"></i> Cơ Hội Duy Nhất Trong Tháng
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-tiara-champagne">
+          Ưu Đãi Độc Quyền Tháng Này – Nâng Tầm Phong Cách Đón Mùa Mới
+        </h2>
+        <p class="text-sm sm:text-base text-gray-300 mt-3 leading-relaxed">
+          GIẢM <strong class="text-tiara-gold font-bold">30%</strong> cho 50 đơn hàng đăng ký sớm nhất + Tặng ngay 01 <strong class="text-tiara-gold font-bold">Khăn Lụa Cao Cấp</strong> trị giá <strong class="text-tiara-gold font-bold">350.000đ</strong>.
+        </p>
+
+        <!-- Countdown Timer -->
+        <div class="mt-8 flex justify-center items-center gap-3 sm:gap-5">
+          
+          <div class="flex flex-col items-center">
+            <div id="cd-days" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-tiara-darkCard border border-tiara-gold/40 flex items-center justify-center font-serif text-2xl sm:text-3xl font-bold text-tiara-gold shadow-lg">
+              02
+            </div>
+            <span class="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest mt-1.5 font-medium">Ngày</span>
+          </div>
+
+          <span class="text-2xl font-bold text-tiara-gold -mt-5">:</span>
+
+          <div class="flex flex-col items-center">
+            <div id="cd-hours" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-tiara-darkCard border border-tiara-gold/40 flex items-center justify-center font-serif text-2xl sm:text-3xl font-bold text-tiara-gold shadow-lg">
+              14
+            </div>
+            <span class="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest mt-1.5 font-medium">Giờ</span>
+          </div>
+
+          <span class="text-2xl font-bold text-tiara-gold -mt-5">:</span>
+
+          <div class="flex flex-col items-center">
+            <div id="cd-minutes" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-tiara-darkCard border border-tiara-gold/40 flex items-center justify-center font-serif text-2xl sm:text-3xl font-bold text-tiara-gold shadow-lg">
+              38
+            </div>
+            <span class="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest mt-1.5 font-medium">Phút</span>
+          </div>
+
+          <span class="text-2xl font-bold text-tiara-gold -mt-5">:</span>
+
+          <div class="flex flex-col items-center">
+            <div id="cd-seconds" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-tiara-darkCard border border-tiara-gold/40 flex items-center justify-center font-serif text-2xl sm:text-3xl font-bold text-tiara-gold shadow-lg">
+              45
+            </div>
+            <span class="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest mt-1.5 font-medium">Giây</span>
+          </div>
+
+        </div>
+
+        <!-- Limited slots counter -->
+        <div class="mt-4 inline-flex items-center gap-2 text-xs text-amber-300 bg-amber-950/40 px-3.5 py-1.5 rounded-full border border-amber-600/30">
+          <i class="fa-solid fa-fire text-amber-400"></i>
+          <span>Chỉ còn lại <strong class="font-bold underline text-white">12 suất</strong> ưu đãi cuối cùng!</span>
+        </div>
+      </div>
+
+      <!-- Offer Grid (Left: Perks & Gift Summary | Right: Order Form) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Perks & Exclusive Gifts (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Gift Card -->
+          <div class="bg-tiara-darkCard p-6 rounded-3xl border border-tiara-gold/30 relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-24 h-24 bg-tiara-gold/10 rounded-full blur-xl"></div>
+            
+            <div class="flex items-center gap-4">
+              <img 
+                src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=200&q=80" 
+                alt="Khăn lụa cao cấp tặng kèm" 
+                class="w-20 h-20 rounded-2xl object-cover border border-tiara-gold/40 shrink-0"
+              >
+              <div>
+                <span class="px-2.5 py-0.5 rounded-full bg-tiara-gold text-tiara-charcoal text-[10px] font-bold uppercase tracking-wider">
+                  Quà Tặng 350.000đ
+                </span>
+                <h4 class="font-serif text-lg font-bold text-tiara-champagne mt-1">Khăn Lụa Tơ Tằm Thượng Hạng</h4>
+                <p class="text-xs text-gray-300 mt-1">Họa tiết độc quyền, phối cùng đầm tạo vẻ ngoài quý phái tuyệt hảo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Perks -->
+          <div class="space-y-4">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-tiara-gold/20 text-tiara-gold flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-tiara-champagne uppercase tracking-wider">Bảo Hành 18 Tháng</h5>
+                <p class="text-xs text-gray-300 mt-0.5">Miễn phí sửa chữa phom dáng, đường chỉ và thay mới khóa kéo.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-tiara-gold/20 text-tiara-gold flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-house-chimney-user"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-tiara-champagne uppercase tracking-wider">Thử Đồ Tại Nhà Thoải Mái</h5>
+                <p class="text-xs text-gray-300 mt-0.5">Shipper đợi bạn thử vừa vặn, chuẩn phom mới thanh toán tiền.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-tiara-gold/20 text-tiara-gold flex items-center justify-center text-lg shrink-0">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-tiara-champagne uppercase tracking-wider">Miễn Phí Vận Chuyển Toàn Quốc</h5>
+                <p class="text-xs text-gray-300 mt-0.5">Đóng gói hộp quà sang trọng, giao nhanh từ 1 - 3 ngày làm việc.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Trust quote -->
+          <div class="p-4 rounded-2xl bg-tiara-gold/10 border border-tiara-gold/20 text-center text-xs text-tiara-champagne">
+            <i class="fa-solid fa-quote-left mr-1 text-tiara-gold"></i> TIARA cam kết hoàn tiền 100% nếu đầm không đúng mô tả hoặc chất vải không làm bạn hài lòng.
+          </div>
+
+        </div>
+
+        <!-- Order / Lead Form (7 cols) -->
+        <div class="lg:col-span-7 bg-tiara-darkCard p-6 sm:p-10 rounded-3xl border border-tiara-gold/40 shadow-2xl relative">
+          
+          <div class="mb-6">
+            <h3 class="font-serif text-2xl font-bold text-white">Đăng Ký Nhận Ưu Đãi 30%</h3>
+            <p class="text-xs sm:text-sm text-gray-400 mt-1">
+              Điền thông tin dưới đây, Stylist của TIARA sẽ liên hệ tư vấn chọn size và xác nhận gửi hộp quà tận tay bạn.
+            </p>
+          </div>
+
+          <!-- The Form -->
+          <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4">
+            
+            <!-- Họ tên -->
+            <div>
+              <label for="customerName" class="block text-xs font-semibold uppercase tracking-wider text-tiara-champagne mb-1.5">
+                Họ và Tên Quý Cô <span class="text-red-400">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                  <i class="fa-regular fa-user text-xs"></i>
+                </div>
+                <input 
+                  type="text" 
+                  id="customerName" 
+                  required 
+                  placeholder="Ví dụ: Nguyễn Minh Anh" 
+                  class="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-sm text-white placeholder-gray-400 focus:outline-none focus:border-tiara-gold focus:ring-1 focus:ring-tiara-gold transition-colors"
+                >
+              </div>
+            </div>
+
+            <!-- Số điện thoại -->
+            <div>
+              <label for="customerPhone" class="block text-xs font-semibold uppercase tracking-wider text-tiara-champagne mb-1.5">
+                Số Điện Thoại <span class="text-red-400">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                  <i class="fa-solid fa-phone text-xs"></i>
+                </div>
+                <input 
+                  type="tel" 
+                  id="customerPhone" 
+                  required 
+                  pattern="[0-9]{10,11}" 
+                  placeholder="Ví dụ: 0988 123 456" 
+                  class="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-sm text-white placeholder-gray-400 focus:outline-none focus:border-tiara-gold focus:ring-1 focus:ring-tiara-gold transition-colors"
+                >
+              </div>
+            </div>
+
+            <!-- Chọn Mẫu Đầm -->
+            <div>
+              <label for="productSelect" class="block text-xs font-semibold uppercase tracking-wider text-tiara-champagne mb-1.5">
+                Chọn Mẫu Đầm Yêu Thích <span class="text-red-400">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                  <i class="fa-solid fa-crown text-xs"></i>
+                </div>
+                <select 
+                  id="productSelect" 
+                  required 
+                  class="w-full pl-10 pr-8 py-3 bg-tiara-dark border border-white/20 rounded-xl text-sm text-white focus:outline-none focus:border-tiara-gold focus:ring-1 focus:ring-tiara-gold transition-colors appearance-none"
+                >
+                  <option value="Đầm Dạ Hội Graceful Silk" selected>Đầm Dạ Hội Graceful Silk – 1.450.000đ (Gốc 2.100.000đ)</option>
+                  <option value="Đầm Công Sở Elegant Queen">Đầm Công Sở Elegant Queen – 1.280.000đ (Gốc 1.850.000đ)</option>
+                  <option value="Đầm Dạo Phố Silk Glow">Đầm Dạo Phố Silk Glow – 1.150.000đ (Gốc 1.600.000đ)</option>
+                  <option value="Tư vấn combo 2 đầm">Tư Vấn Chọn Mẫu Phù Hợp Số Đo</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-gray-400">
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chọn Size & Tùy chọn May đo -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label class="block text-xs font-semibold uppercase tracking-wider text-tiara-champagne">
+                  Kích Thước (Size)
+                </label>
+                <button type="button" onclick="openSizeGuideModal()" class="text-[11px] text-tiara-gold underline hover:text-tiara-champagne">
+                  Bảng tra cứu size
+                </button>
+              </div>
+              <div class="grid grid-cols-4 sm:grid-cols-5 gap-2">
+                <label class="cursor-pointer">
+                  <input type="radio" name="dressSize" value="S" class="peer sr-only">
+                  <div class="text-center py-2.5 rounded-xl border border-white/20 text-xs font-bold peer-checked:bg-tiara-gold peer-checked:text-tiara-charcoal peer-checked:border-tiara-gold hover:border-tiara-gold transition-all">
+                    Size S
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="dressSize" value="M" checked class="peer sr-only">
+                  <div class="text-center py-2.5 rounded-xl border border-white/20 text-xs font-bold peer-checked:bg-tiara-gold peer-checked:text-tiara-charcoal peer-checked:border-tiara-gold hover:border-tiara-gold transition-all">
+                    Size M
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="dressSize" value="L" class="peer sr-only">
+                  <div class="text-center py-2.5 rounded-xl border border-white/20 text-xs font-bold peer-checked:bg-tiara-gold peer-checked:text-tiara-charcoal peer-checked:border-tiara-gold hover:border-tiara-gold transition-all">
+                    Size L
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="dressSize" value="XL" class="peer sr-only">
+                  <div class="text-center py-2.5 rounded-xl border border-white/20 text-xs font-bold peer-checked:bg-tiara-gold peer-checked:text-tiara-charcoal peer-checked:border-tiara-gold hover:border-tiara-gold transition-all">
+                    Size XL
+                  </div>
+                </label>
+                <label class="cursor-pointer col-span-4 sm:col-span-1">
+                  <input type="radio" name="dressSize" value="May Đo" class="peer sr-only">
+                  <div class="text-center py-2.5 rounded-xl border border-white/20 text-xs font-bold peer-checked:bg-tiara-gold peer-checked:text-tiara-charcoal peer-checked:border-tiara-gold hover:border-tiara-gold transition-all">
+                    May Đo
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Địa chỉ nhận hàng -->
+            <div>
+              <label for="customerAddress" class="block text-xs font-semibold uppercase tracking-wider text-tiara-champagne mb-1.5">
+                Địa Chỉ Nhận Hàng (Tỉnh / Thành Phố)
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                  <i class="fa-solid fa-location-dot text-xs"></i>
+                </div>
+                <input 
+                  type="text" 
+                  id="customerAddress" 
+                  placeholder="Ví dụ: 123 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM" 
+                  class="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-sm text-white placeholder-gray-400 focus:outline-none focus:border-tiara-gold focus:ring-1 focus:ring-tiara-gold transition-colors"
+                >
+              </div>
+            </div>
+
+            <!-- Ghi chú / Yêu cầu riêng -->
+            <div>
+              <label for="customerNote" class="block text-xs font-semibold uppercase tracking-wider text-tiara-champagne mb-1.5">
+                Ghi Chú Chiều Cao, Cân Nặng (Để Stylist Chọn Size Chuẩn Nhất)
+              </label>
+              <textarea 
+                id="customerNote" 
+                rows="2" 
+                placeholder="Ví dụ: Cao 1m62, nặng 51kg, eo 66cm..." 
+                class="w-full px-4 py-2.5 bg-white/10 border border-white/20 rounded-xl text-sm text-white placeholder-gray-400 focus:outline-none focus:border-tiara-gold focus:ring-1 focus:ring-tiara-gold transition-colors"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button (Primary Action) -->
+            <div class="pt-3">
+              <button 
+                type="submit" 
+                class="shimmer-btn w-full py-4 rounded-full bg-tiara-gold hover:bg-tiara-goldHover text-tiara-charcoal font-bold text-sm uppercase tracking-widest shadow-gold-glow transition-all duration-300 transform hover:-translate-y-0.5"
+              >
+                <i class="fa-solid fa-bag-shopping mr-2"></i> XÁC NHẬN ĐẶT HÀNG NGAY – GIẢM 30%
+              </button>
+            </div>
+
+            <!-- Micro reassurance -->
+            <div class="flex items-center justify-center gap-4 text-[11px] text-gray-400 pt-2 text-center">
+              <span><i class="fa-solid fa-lock text-tiara-gold mr-1"></i> Bảo mật 100%</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-hand-holding-dollar text-tiara-gold mr-1"></i> Không thu cọc</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-truck text-tiara-gold mr-1"></i> Miễn phí ship</span>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       SECTION 5: FOOTER & TRUST (BRAND REASSURANCE)
+       ======================================================== -->
+  <footer class="bg-[#111110] text-gray-300 pt-16 pb-12 border-t border-tiara-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Footer Multi-Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand Statement (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-tiara-gold flex items-center justify-center text-tiara-gold">
+              <i class="fa-solid fa-crown text-base"></i>
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold tracking-widest text-white">TIARA</span>
+              <span class="block text-[10px] tracking-[0.25em] text-tiara-gold uppercase font-semibold -mt-1">Fashion Boutique</span>
+            </div>
+          </div>
+
+          <!-- CARE Empathy Statement -->
+          <p class="text-sm text-gray-400 leading-relaxed max-w-sm pt-2">
+            "TIARA đồng hành cùng phụ nữ Việt trên hành trình định hình phong cách sống tự tin, tinh tế và đầy cuốn hút. Vẻ đẹp sang trọng đích thực không nằm ở mức giá xa xỉ, mà ở phom dáng tôn vinh chính bạn."
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-tiara-gold hover:text-tiara-charcoal flex items-center justify-center text-sm transition-all">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-tiara-gold hover:text-tiara-charcoal flex items-center justify-center text-sm transition-all">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full bg-white/10 hover:bg-tiara-gold hover:text-tiara-charcoal flex items-center justify-center text-sm transition-all">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 hover:bg-tiara-gold hover:text-tiara-charcoal flex items-center justify-center text-sm transition-all">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Policies & Quick Links (3 cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-tiara-champagne mb-4">
+            Chính Sách & Bảo An
+          </h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li>
+              <a href="#dat-hang" class="hover:text-tiara-gold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-angle-right text-[10px] text-tiara-gold"></i> Chính sách bảo hành phom 18 tháng
+              </a>
+            </li>
+            <li>
+              <a href="#dat-hang" class="hover:text-tiara-gold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-angle-right text-[10px] text-tiara-gold"></i> Chính sách đổi trả 7 ngày linh hoạt
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="openSizeGuideModal()" class="hover:text-tiara-gold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-angle-right text-[10px] text-tiara-gold"></i> Hướng dẫn chọn Size & Số đo chuẩn
+              </a>
+            </li>
+            <li>
+              <a href="#trai-nghiem" class="hover:text-tiara-gold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-angle-right text-[10px] text-tiara-gold"></i> Quy cách đóng gói hộp quà cao cấp
+              </a>
+            </li>
+            <li>
+              <a href="#dat-hang" class="hover:text-tiara-gold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-angle-right text-[10px] text-tiara-gold"></i> Hướng dẫn giặt & bảo quản lụa silk
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact & Showroom (4 cols) -->
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-tiara-champagne mb-4">
+            Showroom & CSKH 24/7
+          </h4>
+          
+          <div class="space-y-3 text-xs text-gray-400">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-tiara-gold mt-1"></i>
+              <span><strong>Showroom Chính:</strong> Quận 1, TP. Hồ Chí Minh (Mở cửa: 09:00 - 21:30 hàng ngày)</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-tiara-gold"></i>
+              <span><strong>Hotline Đặt Hàng & Bảo Hành:</strong> <a href="tel:0988123456" class="text-white hover:text-tiara-gold font-bold">0988 123 456</a></span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-tiara-gold"></i>
+              <span><strong>Email Hỗ Trợ:</strong> <a href="mailto:cskh@tiaraboutique.vn" class="hover:text-tiara-gold">cskh@tiaraboutique.vn</a></span>
+            </div>
+
+            <div class="pt-2">
+              <span class="block text-[11px] text-gray-500 uppercase font-semibold mb-1">Phương thức thanh toán bảo mật:</span>
+              <div class="flex items-center gap-2 text-xl text-gray-400">
+                <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                <i class="fa-solid fa-money-bill-wave text-base" title="COD Tiền Mặt"></i>
+                <i class="fa-solid fa-building-columns text-base" title="Chuyển Khoản Ngân Hàng"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p>© 2024 TIARA Fashion Boutique. Toàn bộ bản quyền thiết kế được bảo lưu.</p>
+        <p class="flex items-center gap-1">
+          Made with <i class="fa-solid fa-heart text-tiara-gold text-[10px]"></i> for Elegant Vietnamese Women
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================
+       MODAL: BẢNG HƯỚNG DẪN CHỌN SIZE CHUẨN
+       ======================================================== -->
+  <div id="sizeGuideModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close button -->
+      <button onclick="closeSizeGuideModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-tiara-sand hover:bg-tiara-gold text-tiara-charcoal hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <span class="text-xs uppercase tracking-widest text-tiara-gold font-bold">Quy Chuẩn Đo Dáng TIARA</span>
+        <h3 class="font-serif text-2xl font-bold text-tiara-charcoal mt-1">Bảng Tra Cứu Size Chuẩn</h3>
+        <p class="text-xs text-tiara-muted mt-1">Chuẩn phom dáng theo thể trạng phụ nữ Việt Nam</p>
+      </div>
+
+      <!-- Size Table -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse">
+          <thead>
+            <tr class="bg-tiara-sand text-tiara-charcoal font-bold border-b border-tiara-border">
+              <th class="p-3 rounded-l-xl">Size</th>
+              <th class="p-3">Vòng 1 (cm)</th>
+              <th class="p-3">Vòng 2 (cm)</th>
+              <th class="p-3">Vòng 3 (cm)</th>
+              <th class="p-3">Cân Nặng (kg)</th>
+              <th class="p-3 rounded-r-xl">Chiều Cao (cm)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-tiara-border/60 text-tiara-charcoal">
+            <tr class="hover:bg-tiara-cream/50 transition-colors">
+              <td class="p-3 font-bold text-tiara-gold">S</td>
+              <td class="p-3">82 - 85</td>
+              <td class="p-3">64 - 67</td>
+              <td class="p-3">86 - 89</td>
+              <td class="p-3">43 - 48</td>
+              <td class="p-3">150 - 158</td>
+            </tr>
+            <tr class="hover:bg-tiara-cream/50 transition-colors">
+              <td class="p-3 font-bold text-tiara-gold">M</td>
+              <td class="p-3">86 - 89</td>
+              <td class="p-3">68 - 72</td>
+              <td class="p-3">90 - 94</td>
+              <td class="p-3">49 - 54</td>
+              <td class="p-3">155 - 163</td>
+            </tr>
+            <tr class="hover:bg-tiara-cream/50 transition-colors">
+              <td class="p-3 font-bold text-tiara-gold">L</td>
+              <td class="p-3">90 - 94</td>
+              <td class="p-3">73 - 77</td>
+              <td class="p-3">95 - 99</td>
+              <td class="p-3">55 - 60</td>
+              <td class="p-3">158 - 167</td>
+            </tr>
+            <tr class="hover:bg-tiara-cream/50 transition-colors">
+              <td class="p-3 font-bold text-tiara-gold">XL</td>
+              <td class="p-3">95 - 100</td>
+              <td class="p-3">78 - 83</td>
+              <td class="p-3">100 - 105</td>
+              <td class="p-3">61 - 66</td>
+              <td class="p-3">160 - 170</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Size Measuring Tips -->
+      <div class="mt-6 p-4 rounded-2xl bg-tiara-sand/60 border border-tiara-border/80 text-xs space-y-2">
+        <p class="font-bold text-tiara-charcoal">💡 Lời khuyên chọn size từ Stylist:</p>
+        <p class="text-tiara-muted">• Nếu số đo của bạn nằm giữa 2 size, hãy ưu tiên chọn theo <strong>vòng eo (vòng 2)</strong> để có phom đầm ôm vừa vặn và giấu bụng tốt nhất.</p>
+        <p class="text-tiara-muted">• TIARA hỗ trợ <strong>may đo riêng theo số đo</strong> miễn phí cho khách hàng có số đo đặc biệt.</p>
+      </div>
+
+      <div class="mt-6 text-center">
+        <button onclick="closeSizeGuideModal()" class="px-6 py-2.5 rounded-full bg-tiara-charcoal text-white hover:bg-tiara-gold font-semibold text-xs uppercase tracking-wider transition-all">
+          Đã Hiểu, Quay Lại Chọn Đầm
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       MODAL: VIDEO / UNBOXING PREVIEW LIGHTBOX
+       ======================================================== -->
+  <div id="videoModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+    <div class="bg-tiara-darkCard rounded-3xl max-w-3xl w-full p-4 sm:p-6 border border-tiara-gold/40 shadow-2xl relative">
+      <button onclick="closeVideoModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-tiara-gold text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-4 pr-8">
+        <span class="text-xs uppercase tracking-wider text-tiara-gold font-bold">Unboxing & Craftsmanship Review</span>
+        <h4 class="font-serif text-xl font-bold text-white mt-1">Trải Nghiệm Mở Hộp & Soi Cận Cảnh Đầm TIARA</h4>
+      </div>
+
+      <!-- Video mockup container with autoplaying preview or animated scene -->
+      <div class="relative aspect-video rounded-2xl overflow-hidden bg-black border border-white/10">
+        <iframe 
+          id="videoIframe" 
+          class="w-full h-full" 
+          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=0" 
+          title="TIARA Boutique Review" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="mt-4 flex items-center justify-between text-xs text-gray-300">
+        <span><i class="fa-solid fa-check text-tiara-gold mr-1"></i> Video quay cận cảnh 100% bằng ánh sáng tự nhiên</span>
+        <button onclick="closeVideoModal(); selectDressAndOrder('Đầm Dạ Hội Graceful Silk', '1.450.000đ');" class="text-tiara-gold hover:underline font-bold">
+          Đặt mẫu đầm này ngay →
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       MODAL: ORDER SUCCESS RECAP MODAL
+       ======================================================== -->
+  <div id="orderSuccessModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl text-center relative border border-tiara-gold/40 animate-pulse-subtle">
+      
+      <div class="w-16 h-16 rounded-full bg-tiara-goldLight text-tiara-gold flex items-center justify-center text-3xl mx-auto mb-4 shadow-sm">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <span class="text-xs uppercase tracking-widest text-tiara-gold font-bold">Đặt Hàng Thành Công</span>
+      <h3 class="font-serif text-2xl font-bold text-tiara-charcoal mt-1">Cảm Ơn Quý Cô!</h3>
+
+      <p class="text-sm text-tiara-muted mt-2 leading-relaxed">
+        TIARA đã nhận được thông tin đăng ký ưu đãi 30% kèm quà tặng Khăn Lụa 350.000đ. Stylist của chúng tôi sẽ gọi điện xác nhận và gửi hình ảnh đóng gói trước khi chuyển hàng.
+      </p>
+
+      <div class="my-5 p-4 rounded-2xl bg-tiara-sand text-left text-xs space-y-1.5 border border-tiara-border">
+        <p><strong>Khách hàng:</strong> <span id="recapName" class="text-tiara-charcoal"></span></p>
+        <p><strong>Số điện thoại:</strong> <span id="recapPhone" class="text-tiara-charcoal"></span></p>
+        <p><strong>Sản phẩm:</strong> <span id="recapProduct" class="text-tiara-goldDark font-bold"></span></p>
+        <p><strong>Size đã chọn:</strong> <span id="recapSize" class="text-tiara-charcoal"></span></p>
+        <p class="text-emerald-700 font-semibold pt-1">
+          <i class="fa-solid fa-gift mr-1"></i> Tặng kèm 01 Khăn Lụa Cao Cấp (350.000đ)
+        </p>
+      </div>
+
+      <button onclick="closeSuccessModal()" class="w-full py-3 rounded-full bg-tiara-charcoal hover:bg-tiara-gold text-white font-bold text-xs uppercase tracking-wider transition-all">
+        Hoàn Tất & Tiếp Tục Xem
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       FLOATING CRO TOAST: RECENT PURCHASES (SOCIAL PROOF URGENCY)
+       ======================================================== -->
+  <div id="recentPurchaseToast" class="fixed bottom-20 left-4 z-40 hidden sm:flex items-center gap-3 p-3.5 bg-white/95 backdrop-blur-md rounded-2xl border border-tiara-border shadow-luxury max-w-sm transition-all duration-500 transform translate-y-8 opacity-0">
+    <img 
+      id="toastAvatar" 
+      src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" 
+      alt="Customer" 
+      class="w-11 h-11 rounded-full object-cover border border-tiara-gold shrink-0"
+    >
+    <div class="pr-2 text-left">
+      <p id="toastMessage" class="text-xs text-tiara-charcoal font-medium leading-snug">
+        <strong>Chị Mai Linh (TP.HCM)</strong> vừa đặt mua <span class="text-tiara-goldDark font-semibold">Đầm Dạ Hội Graceful Silk</span>
+      </p>
+      <span id="toastTime" class="text-[10px] text-tiara-muted">Cách đây 3 phút • Đã nhận voucher 30%</span>
+    </div>
+    <button onclick="closeToast()" class="text-gray-400 hover:text-gray-600 text-xs ml-auto">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+
+  <!-- ========================================================
+       STICKY BOTTOM BAR FOR MOBILE CRO (QUICK BUY / CALL)
+       ======================================================== -->
+  <div class="fixed bottom-0 inset-x-0 z-40 sm:hidden bg-tiara-dark/95 backdrop-blur-md border-t border-tiara-gold/30 px-4 py-3 flex items-center justify-between gap-3">
+    <a href="tel:0988123456" class="flex flex-col items-center justify-center text-white hover:text-tiara-gold text-center px-2">
+      <i class="fa-solid fa-phone text-tiara-gold text-base"></i>
+      <span class="text-[10px] tracking-wider uppercase font-semibold mt-0.5">Tư Vấn</span>
+    </a>
+
+    <a href="#dat-hang" class="shimmer-btn flex-1 py-2.5 rounded-full bg-tiara-gold text-tiara-charcoal font-bold text-xs uppercase tracking-wider text-center shadow-lg">
+      Đặt Mua Giảm 30%
+    </a>
+
+    <button onclick="openSizeGuideModal()" class="flex flex-col items-center justify-center text-white hover:text-tiara-gold text-center px-2">
+      <i class="fa-solid fa-ruler-horizontal text-tiara-gold text-base"></i>
+      <span class="text-[10px] tracking-wider uppercase font-semibold mt-0.5">Bảng Size</span>
+    </button>
+  </div>
+
+
+  <!-- ========================================================
+       JAVASCRIPT LOGIC (INTERACTIVE BEHAVIORS, TIMER, CRO)
+       ======================================================== -->
+  <script>
+    // --- Mobile Menu Toggle ---
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      menu.classList.toggle('hidden');
+      if (menu.classList.contains('hidden')) {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      } else {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      }
+    }
+    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+    // --- Live Countdown Timer ---
+    function startCountdown() {
+      // Set target countdown (approx 2 days, 14 hours from now)
+      let countdownTime = (2 * 24 * 3600) + (14 * 3600) + (38 * 60) + 45;
+      
+      const daysEl = document.getElementById('cd-days');
+      const hoursEl = document.getElementById('cd-hours');
+      const minutesEl = document.getElementById('cd-minutes');
+      const secondsEl = document.getElementById('cd-seconds');
+
+      setInterval(() => {
+        if (countdownTime <= 0) return;
+        countdownTime--;
+
+        const d = Math.floor(countdownTime / (24 * 3600));
+        const h = Math.floor((countdownTime % (24 * 3600)) / 3600);
+        const m = Math.floor((countdownTime % 3600) / 60);
+        const s = Math.floor(countdownTime % 60);
+
+        daysEl.textContent = String(d).padStart(2, '0');
+        hoursEl.textContent = String(h).padStart(2, '0');
+        minutesEl.textContent = String(m).padStart(2, '0');
+        secondsEl.textContent = String(s).padStart(2, '0');
+      }, 1000);
+    }
+    startCountdown();
+
+    // --- Select Dress & Smooth Scroll to Order Section ---
+    function selectDressAndOrder(dressName, price) {
+      const selectEl = document.getElementById('productSelect');
+      for (let i = 0; i < selectEl.options.length; i++) {
+        if (selectEl.options[i].value.includes(dressName)) {
+          selectEl.selectedIndex = i;
+          break;
+        }
+      }
+      const orderSection = document.getElementById('dat-hang');
+      orderSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // --- Unboxing Interactive Tab Switcher ---
+    const unboxingData = {
+      box: {
+        title: "Đập Hộp TIARA – Trọn Vẹn Cảm Xúc Nhận Món Quà Cho Chính Bạn",
+        desc: "Mỗi sản phẩm TIARA đều được đóng gói tỉ mỉ trong hộp quà cứng cáp phủ nơ lụa satin champagne sang trọng, kèm thiệp cảm ơn dập kim và túi thơm tự nhiên cao cấp. Khi mở ra, bạn sẽ cảm nhận ngay hương thơm dịu nhẹ và sự trân quý chúng tôi gửi gắm.",
+        img: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80",
+        list: [
+          "<strong>Hộp đựng cứng cao cấp:</strong> Bảo vệ đầm nguyên phom dáng trong quá trình vận chuyển.",
+          "<strong>Đường may giấu mép tinh xảo:</strong> Không một sợi chỉ thừa, đường may phẳng phiu ôm sát cơ thể.",
+          "<strong>Khóa kéo giọt nước YKK ẩn:</strong> Trơn mượt tuyệt đối, độ bền trên 10.000 lần kéo."
+        ]
+      },
+      seam: {
+        title: "Kỹ Nghệ May Đo Thủ Công – Tỉ Mỉ Từng Đường Kim Mũi Chỉ",
+        desc: "Được may bởi các nghệ nhân thợ may lành nghề với hơn 15 năm kinh nghiệm. Mỗi đường chỉ đều đạt tiêu chuẩn 18 mũi/inch, đường may cuộn mép giấu sạch sợi tơ thừa, không gây cọ xát ngứa ngáy cho làn da nhạy cảm.",
+        img: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=1000&q=80",
+        list: [
+          "<strong>Mật độ chỉ tiêu chuẩn boutique:</strong> 18 mũi kim trên mỗi inch, chắc chắn bền bỉ suốt 18 tháng.",
+          "<strong>Kỹ thuật ép keo nhiệt chuyên dụng:</strong> Giữ phom cổ áo và cúp ngực đứng dáng sau nhiều lần giặt.",
+          "<strong>Gấp nếp 3D thủ công:</strong> Tạo độ bồng tự nhiên, giấu trọn khuyết điểm vòng bụng."
+        ]
+      },
+      fabric: {
+        title: "Chất Liệu Lụa Tơ Tằm Tự Nhiên – Mịn Màng Như Làn Da Thứ Hai",
+        desc: "Sợi tơ tằm dệt mật độ cao mang đến hiệu ứng phản chiếu ánh sáng tự nhiên đầy mê hoặc. Khi bạn di chuyển, tà váy uyển chuyển lướt nhẹ, toát lên thần thái sang trọng mà không chất liệu tổng hợp nào có thể so sánh.",
+        img: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80",
+        list: [
+          "<strong>Thoáng khí & mát lạnh tự nhiên:</strong> Dịu mát ngày hè, giữ ấm nhẹ nhàng ngày thu đông.",
+          "<strong>Không bắt tĩnh điện:</strong> Váy không dính bết vào người khi bước đi, giữ độ rủ tự nhiên.",
+          "<strong>Độ bền màu cao:</strong> Màu nhuộm hữu cơ an toàn cho da, không phai màu theo thời gian."
+        ]
+      }
+    };
+
+    function changeUnboxingTab(type) {
+      const data = unboxingData[type];
+      document.getElementById('unboxingTitle').innerHTML = data.title;
+      document.getElementById('unboxingDesc').innerHTML = data.desc;
+      document.getElementById('unboxingPreviewImg').src = data.img;
+
+      const listEl = document.getElementById('unboxingList');
+      listEl.innerHTML = data.list.map(item => `
+        <li class="flex items-start gap-3 text-sm text-tiara-charcoal">
+          <div class="w-5 h-5 rounded-full bg-tiara-goldLight text-tiara-gold flex items-center justify-center text-xs shrink-0 mt-0.5">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <span>${item}</span>
+        </li>
+      `).join('');
+
+      // Update button classes
+      ['box', 'seam', 'fabric'].forEach(key => {
+        const btn = document.getElementById(`tabBtn-${key}`);
+        if (key === type) {
+          btn.className = "unboxing-tab-btn px-3 py-2 rounded-xl text-xs font-bold border transition-all text-center bg-tiara-gold text-white border-tiara-gold shadow-sm";
+        } else {
+          btn.className = "unboxing-tab-btn px-3 py-2 rounded-xl text-xs font-bold border transition-all text-center bg-white text-tiara-charcoal border-tiara-border hover:border-tiara-gold";
+        }
+      });
+    }
+
+    // --- Size Guide Modal Controls ---
+    function openSizeGuideModal() {
+      document.getElementById('sizeGuideModal').classList.remove('hidden');
+    }
+    function closeSizeGuideModal() {
+      document.getElementById('sizeGuideModal').classList.add('hidden');
+    }
+
+    // --- Video Modal Controls ---
+    function openVideoModal() {
+      document.getElementById('videoModal').classList.remove('hidden');
+    }
+    function closeVideoModal() {
+      document.getElementById('videoModal').classList.add('hidden');
+    }
+
+    // --- Order Form Submission Handler ---
+    function handleOrderSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('customerName').value;
+      const phone = document.getElementById('customerPhone').value;
+      const product = document.getElementById('productSelect').value;
+      const sizeRadio = document.querySelector('input[name="dressSize"]:checked');
+      const size = sizeRadio ? sizeRadio.value : 'M';
+
+      document.getElementById('recapName').textContent = name;
+      document.getElementById('recapPhone').textContent = phone;
+      document.getElementById('recapProduct').textContent = product;
+      document.getElementById('recapSize').textContent = size;
+
+      document.getElementById('orderSuccessModal').classList.remove('hidden');
+    }
+
+    function closeSuccessModal() {
+      document.getElementById('orderSuccessModal').classList.add('hidden');
+      document.getElementById('orderForm').reset();
+    }
+
+    // --- Recent Purchase Social Proof Toast (Random Interval) ---
+    const recentOrders = [
+      { name: "Chị Minh Thư (Hà Nội)", product: "Đầm Dạ Hội Graceful Silk", time: "2 phút trước", avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" },
+      { name: "Chị Ngọc Mai (TP.HCM)", product: "Đầm Công Sở Elegant Queen", time: "4 phút trước", avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" },
+      { name: "Chị Phương Thảo (Đà Nẵng)", product: "Đầm Dạo Phố Silk Glow", time: "7 phút trước", avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=100&q=80" },
+      { name: "Chị Thanh Hằng (Hải Phòng)", product: "Đầm Dạ Hội Graceful Silk", time: "9 phút trước", avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" }
+    ];
+
+    let currentToastIdx = 0;
+    function showRecentOrderToast() {
+      const toast = document.getElementById('recentPurchaseToast');
+      if (!toast) return;
+      const order = recentOrders[currentToastIdx];
+      currentToastIdx = (currentToastIdx + 1) % recentOrders.length;
+
+      document.getElementById('toastAvatar').src = order.avatar;
+      document.getElementById('toastMessage').innerHTML = `<strong>${order.name}</strong> vừa đặt mua <span class="text-tiara-goldDark font-semibold">${order.product}</span>`;
+      document.getElementById('toastTime').textContent = `Cách đây ${order.time} • Đã nhận voucher 30%`;
+
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.remove('opacity-0', 'translate-y-8');
+        toast.classList.add('opacity-100', 'translate-y-0');
+      }, 50);
+
+      // Hide after 6 seconds
+      setTimeout(() => {
+        closeToast();
+      }, 6000);
+    }
+
+    function closeToast() {
+      const toast = document.getElementById('recentPurchaseToast');
+      if (!toast) return;
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-8');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 500);
+    }
+
+    // Trigger toast after 4s, and periodically every 18s
+    setTimeout(showRecentOrderToast, 4000);
+    setInterval(showRecentOrderToast, 18000);
+
+    // Close modals on clicking outside overlay
+    window.addEventListener('click', (e) => {
+      const sizeModal = document.getElementById('sizeGuideModal');
+      const videoModal = document.getElementById('videoModal');
+      const successModal = document.getElementById('orderSuccessModal');
+      if (e.target === sizeModal) closeSizeGuideModal();
+      if (e.target === videoModal) closeVideoModal();
+      if (e.target === successModal) closeSuccessModal();
+    });
+  </script>
+
+</body>
+</html>
